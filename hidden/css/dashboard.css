@@ -1,0 +1,404 @@
+header {
+    width: 230px;
+    border-right: var(--boder);
+    padding: 1.5rem;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header img {
+    margin-bottom: 1.5rem;
+}
+
+header ul {
+    display: grid;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+header>ul {
+    border-top: var(--boder);
+}
+
+header ul a li {
+    padding: 0.5rem 0;
+    font-weight: var(--font-semi-bold);
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+    color: var(--text-color);
+}
+
+header ul a:hover li {
+    color: var(--primary-color);
+}
+
+header ul a li i {
+    font-size: 1.3rem;
+}
+
+.active-link li {
+    color: var(--secondary-color);
+}
+
+.welcome_admin_title {
+    color: var(--secondary-color);
+    margin-bottom: var(--mb-0-25);
+}
+
+.page_title {
+    color: var(--secondary-color);
+}
+
+.box_title {
+    margin-bottom: var(--mb-1);
+}
+
+.single_col_form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.double_col_form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.single_col_form div, 
+.double_col_form div {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.double_col_form button {
+    height: max-content;
+    display: flex;
+    align-self: flex-end;
+}
+
+.span_2 {
+    grid-column: span 2;
+}
+
+.span_3 {
+    grid-column: span 3;
+}
+
+.check_input {
+    display: flex !important;
+    align-items: center;
+    margin: .75rem 0;
+    column-gap: .5rem !important;
+}
+
+.file_input input {
+    padding: 0;
+}
+
+.file_input {
+    align-self: flex-start;
+}
+
+.ep_table {
+    width: 100%;
+}
+
+.ep_table tr th, 
+.ep_table tr td{
+    padding: 1rem 0.75rem !important;
+}
+
+.ep_table tbody tr {
+    border-top: var(--boder) !important;
+}
+
+.ep_table tbody tr:hover {
+    background: var(--white-color);
+}
+
+.btn_grp {
+    display: flex;
+    gap: .5rem;
+}
+
+.ep_p {
+    padding: .25rem .5rem;
+}
+
+.ep_mb_1 {
+    margin-bottom: 1.25rem;
+}
+
+.btn_icon {
+    padding: 0;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn_trp {
+    background: transparent;
+    color: var(--text-color);
+}
+
+.btn_hover:hover {
+    color: var(--white-color);
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_semi {
+    font-weight: var(--font-semi-bold);
+}
+
+.text_sm {
+    font-size: var(--smaller-font);
+}
+
+.text_strike {
+    text-decoration: line-through;
+}
+
+.ep_badge {
+    font-size: var(--smaller-font);
+    background: var(--secondary-color);
+    width: max-content;
+    padding: .35rem .5rem;
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+}
+
+.text_success {
+    color: var(--success-color);
+}
+
+.bg_success {
+    background: var(--success-bg-color);
+}
+
+.text_warning {
+    color: var(--warning-color);
+}
+
+.bg_warning {
+    background: var(--warning-bg-color);
+}
+
+.text_danger {
+    color: var(--danger-color);
+}
+
+.bg_danger {
+    background: var(--danger-bg-color);
+}
+
+.text_info {
+    color: var(--info-color);
+}
+
+.bg_info {
+    background: var(--info-bg-color);
+}
+
+.text_dark {
+    color: var(--dark-color);
+}
+
+.bg_dark {
+    background: var(--dark-bg-color);
+}
+
+.product_data_img {
+    width: 2.5rem;
+    overflow: hidden;
+}
+
+.cart_subtotal {
+    border-top: var(--boder);
+    margin: 1.25rem 0;
+    padding: .75rem 0;
+}
+
+.cart_subtotal p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product_cards {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
+}
+
+.product_card_img {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product_card_title {
+    margin-bottom: .25rem;
+}
+
+.product_card_price {
+    margin-bottom: .25rem;
+}
+
+.ep_table input {
+    width: 3.25rem;
+    padding-right: 0;
+}
+
+.summery_box {
+    margin: 0 7rem 0 0;
+    border: var(--boder);
+    padding: 2.5rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mt_2_5 {
+    margin-top: 2.5rem;
+}
+
+.text_h5 {
+    font-size: var(--h5-font);
+}
+
+#charge {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.report_boxs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.report_box {
+    text-align: center;
+    border: var(--boder);
+    padding: 1.25rem 1rem;
+}
+
+.report_box_title {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.report_box_data {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.delivered_invoice_container {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.delivered_invoice {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.delivered_invoice p {
+    font-size: var(--small-font);
+}
+
+.item_table {
+    width: 100%;
+    font-size: var(--small-font);
+}
+
+.item_table th,
+.item_table td {
+    border: 0;
+    /*border-bottom: var(--boder);*/
+    padding: .25rem .5rem;
+}
+
+.item_table tbody tr:nth-child(odd) {
+    background: #E5E7EB;
+}
+
+.invoice-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.invoice-form input[type="text"],
+.invoice-form input[type="tel"],
+.invoice-form select,
+.invoice-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.invoice-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.invoice-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.secret_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.ep_card {
+    border: 2px solid #ccc;
+    padding: 2rem;
+    display: grid;
+    gap: .75rem;
+}
+
+.p_bottom {
+    padding-bottom: .75rem;
+}
+
+.border_bottom {
+    border-bottom: 1px dashed #ccc;
+}
+
+.ep_cardbox {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.ep_cardbox p:last-child {
+    text-align: right;
+}

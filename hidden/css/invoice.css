@@ -1,0 +1,258 @@
+:root {
+    /*=========== COLOR SCHEME ===========*/
+    --primary-color: #FBC91B;
+    --secondary-color: #000000;
+    --light-color: #E8E8E8;
+    --white-color: #FFFFFF;
+
+    /*=========== FONTS ===========*/
+    --body-font: 'Montserrat', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --h1-font: 2.75rem;
+    --h2-font: 2.25rem;
+    --h3-font: 1.85rem;
+    --h4-font: 1.25rem;
+    --h5-font: 1.12rem;
+    --normal-font: 0.938rem;
+    --small-font: 0.813rem;
+    --smaller-font: 0.688rem;
+
+    /*=============== FONTS WEIGHT ==================*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*=============== MARGINS BOTTOM ==================*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-25: 1.25rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+
+    /*=============== Z INDEX ==================*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /*=============== BORDER ==================*/
+    --boder: 1px solid #D9D9D9;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        /*=========== FONTS ===========*/
+        --h1-font: 3.45rem;
+        --h2-font: 2.9rem;
+        --h3-font: 2.2rem;
+        --h4-font: 1.5rem;
+        --h5-font: 1.25rem;
+        --normal-font: 13px;
+        --small-font: 11px;
+        --smaller-font: 0.75rem;
+    }
+}
+
+/*=========== RESET DEFAULT CSS ===========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s ease;
+    font-family: var(--body-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: var(--normal-font);
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--secondary-color);
+    font-weight: var(--font-bold);
+    font-family: var(--title-font);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--h1-font);
+}
+
+h2 {
+    font-size: var(--h2-font);
+}
+
+h3 {
+    font-size: var(--h3-font);
+}
+
+h4 {
+    font-size: var(--h4-font);
+}
+
+h5 {
+    font-size: var(--h5-font);
+}
+
+p {
+    margin: 0;
+    font-size: var(--normal-font);
+}
+
+img {
+    width: 100%;
+}
+
+/*=============== REUSABLE CLASS ==================*/
+.w_100 {
+    width: 100% !important;
+}
+
+.ep_container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.ep_flex {
+    display:flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ep_center {
+    justify-content: center;
+}
+
+.ep_end {
+    justify-content: flex-end;
+}
+
+.ep_start {
+    justify-content: flex-start;
+}
+
+.align_start {
+    padding: .1rem 1rem;
+    align-items: flex-start;
+    padding-bottom: 0;
+    border-bottom: 1px solid black;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.ep_grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.grid_2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gap_3 {
+    gap: 3rem;
+}
+
+.m_auto {
+    margin: 0 auto;
+}
+
+.mb_5 {
+    margin-bottom: .5rem;
+}
+
+.mb_75 {
+    margin-bottom: .75rem;
+}
+
+.mt_75 {
+    margin-top: .75rem;
+}
+
+/*=============== INVOICE ==================*/
+.header {
+    border-bottom: 1px solid black;
+    align-items: flex-start;
+    padding: .1rem 1rem;
+}
+
+.bar_wrapper {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.bar {
+    width: 300px;
+    height: 35px;
+    background: var(--primary-color);
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.bar:nth-child(2) {
+    background: var(--secondary-color);
+}
+
+.logo {
+    column-gap: .5rem;
+    margin-bottom: var(--mb-0-75);
+}
+
+.logo img {
+    width: 40px;
+}
+
+.shipping_address {
+    max-width: 250px;
+}
+
+.item_table {
+    width: 100%;
+}
+
+.item_table thead {
+    text-align: left;
+}
+
+.item_table thead tr th,
+.item_table tbody tr td {
+    padding: .25rem 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.footer {
+    padding: .1rem 1rem;
+    background: rgba(232, 232, 232, .2);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.footer_first {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.footer_first p {
+    font-size: var(--small-font);
+}
+
+.main-inv  {
+    border: 1px solid black;
+}
