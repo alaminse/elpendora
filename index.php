@@ -217,15 +217,27 @@ if (isset($_SESSION['cart'])) {
             <a href="https://elpandorapub.com/">
                 <img src="hidden/images/logo.png" alt="" class="footer_logo">
             </a>
-            <div class="tagline">Books make us Birds.</div>
+            <div class="ro">
+                <div class="col1">
+                    <div class="tagline">Books make us Birds.</div>
 
-            <div class="ep_flex ep_start footer_list mb_75">
-                <i class='bx bxs-map'></i>
-                <p>14/A, 31/A, Concord Centre Point, Tejgaon, Dhaka-1215</p>
-            </div>
-            <div class="ep_flex ep_start footer_list">
-                <i class='bx bxs-phone' ></i>
-                <p>017 1659 8030</p>
+                    <div class="ep_flex ep_start footer_list mb_75">
+                        <i class='bx bxs-map'></i>
+                        <p>14/A, 31/A, Concord Centre Point, Tejgaon, Dhaka-1215</p>
+                    </div>
+                    <div class="ep_flex ep_start footer_list">
+                        <i class='bx bxs-phone' ></i>
+                        <p>017 1659 8030</p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="tagline">Delivery Partner</div>
+                    <div class="img">
+                        <img src="nc_assets/img/scs.png" title="sundarban">
+                        <!-- <img src="nc_assets/img/scs-white.png" title="sundarban"> -->
+                        <img src="nc_assets/img/redx.png" title="red-x">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -235,5 +247,44 @@ if (isset($_SESSION['cart'])) {
     </div>
 </footer>
 
+<style>
+    .col1, .col2 {
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .col2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .col2 .tagline {
+        text-align: right;
+    }
+
+    .ro .img img {
+        max-width: 100%;
+        height: 70px;
+    }
+
+    @media screen and (max-width: 567px) {
+        .col1, .col2 {
+            width: 100%;
+            box-sizing: border-box;
+            float: left;
+        }
+        .col2 {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+    }
+
+</style>
 </body>
 </html>
